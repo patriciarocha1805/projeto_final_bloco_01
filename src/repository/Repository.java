@@ -1,4 +1,4 @@
-package Model;
+package repository;
 
 import Model.Produto;
 
