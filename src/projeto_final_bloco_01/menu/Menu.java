@@ -2,6 +2,8 @@ package projeto_final_bloco_01.menu;
 
 import java.util.Scanner;
 
+import Model.ProdutoEscolar;
+
 public class Menu {
 
 	public static void main(String[] args) {
@@ -21,9 +23,9 @@ public class Menu {
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
 			System.out.println("                                                     ");
-			System.out.println("            1 - Criar Cadastro                       ");
+			System.out.println("            1 - Cadastrar Produto                       ");
 			System.out.println("            2 - Pesquisar produto                    ");
-			System.out.println("            3 - Carrinho                             ");
+			System.out.println("            3 - Listar Produtos                             ");
 			System.out.println("            4 - Atualizar Cadastro                   ");
 			System.out.println("            5 - Apagar Conta                         ");
 			System.out.println("            0 - Sair                                 ");
@@ -42,6 +44,18 @@ public class Menu {
 			switch (opcao) {
 			case 1:
 				System.out.println("Criar Cadastro\n\n");
+				
+				//Teste 
+				ProdutoEscolar produto1 = new ProdutoEscolar(
+						1,
+						"Caderno Inteligente",
+						45.90f,
+						10,
+						"Matemática"
+					);
+
+					produto1.visualizar();
+				
 
 				break;
 			case 2:
@@ -58,6 +72,8 @@ public class Menu {
 				break;
 			case 5:
 				System.out.println("Apagar o Cadastro\n\n");
+				
+				break;
 
 	}
 		}
