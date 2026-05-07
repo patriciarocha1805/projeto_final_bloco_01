@@ -1,6 +1,6 @@
-package repository;
+package projeto_final_bloco_01.repository;
 
-import Model.Produto;
+import projeto_final_bloco_01.model.Produto;
 
 public interface Repository {
 	

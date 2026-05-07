@@ -2,7 +2,7 @@ package projeto_final_bloco_01.menu;
 
 import java.util.Scanner;
 
-import Model.ProdutoEscolar;
+import projeto_final_bloco_01.model.ProdutoEscolar;
 
 public class Menu {
 
