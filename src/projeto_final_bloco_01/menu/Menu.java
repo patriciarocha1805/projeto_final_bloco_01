@@ -2,6 +2,7 @@ package projeto_final_bloco_01.menu;
 
 import java.util.Scanner;
 
+import projeto_final_bloco_01.controller.ProdutoController;
 import projeto_final_bloco_01.model.ProdutoEscolar;
 
 public class Menu {
@@ -14,6 +15,12 @@ public class Menu {
 		float valor, valorTotal;
 		boolean continuar;
 		String nome;
+		
+		// Teste Controller
+		ProdutoController produtos = new ProdutoController();
+		ProdutoEscolar produto1 = new ProdutoEscolar(1, "Caderno de Desenho", 30.00f, 2, "Artes");
+		produtos.cadastrar(produto1);
+		produtos.listarTodos();
 
 		while (true) {
 
@@ -44,16 +51,6 @@ public class Menu {
 			switch (opcao) {
 			case 1:
 				System.out.println("Criar Cadastro\n\n");
-				
-				//Teste 
-				ProdutoEscolar produto1 = new ProdutoEscolar(
-						1,
-						"Caderno Inteligente",
-						45.90f,
-						10,
-						"Matemática"
-					);
-
 					produto1.visualizar();
 				
 
